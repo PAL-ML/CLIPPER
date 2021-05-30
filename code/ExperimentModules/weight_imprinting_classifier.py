@@ -456,7 +456,8 @@ class WeightImprintingClassifier:
 
 
         hamming_score = 0
-        jaccard_index = 0metric_values = {}
+        jaccard_index = 0
+        metric_values = {}
         if 'hamming' in metrics:
             hamming_score = hamming_loss(y_bin, pred_bin)
             metric_values['hamming'] = hamming_score
